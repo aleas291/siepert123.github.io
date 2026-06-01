@@ -1,3 +1,5 @@
-<Latest>
-  <version minecraft="b1.7.3">1.0.0</version>
-</Latest>
+<Versions>
+  <Latest>
+    <version minecraft="b1.7.3">1.0.0</version>
+  </Latest>
+</Versions>
