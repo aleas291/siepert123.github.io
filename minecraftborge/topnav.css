@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+.topnav {
+  background-color: #1a1a1a;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topnav-container {
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.topnav-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.topnav-logo-icon {
+  width: 40px;
+  height: 40px;
+  background: #2e8b57;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.topnav-nav {
+  display: flex;
+  gap: 0;
+  list-style: none;
+}
+
+.topnav-nav li {
+  margin: 0;
+}
+
+.topnav-nav a {
+  color: #ccc;
+  text-decoration: none;
+  padding: 20px 15px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.topnav-nav a:hover {
+  background-color: #2e8b57;
+  color: white;
+}
+
+.topnav-info {
+  color: #999;
+  font-size: 12px;
+  text-align: right;
+  margin-left: auto;
+}
+
+.topnav-info p {
+  margin: 2px 0;
+}
+
+.content {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+}

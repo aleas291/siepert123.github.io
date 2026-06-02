@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MinecraftBorge - Downloads</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: sans-serif;
+        background-color: #f5f5f5;
+      }
+      
+      .topnav {
+        background-color: #1a1a1a;
+        padding: 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      
+      .topnav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+      }
+      
+      .topnav-logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 15px 0;
+      }
+      
+      .topnav-logo-icon {
+        width: 40px;
+        height: 40px;
+        background: #2e8b57;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: white;
+      }
+      
+      .topnav-nav {
+        display: flex;
+        gap: 0;
+        list-style: none;
+      }
+      
+      .topnav-nav li {
+        margin: 0;
+      }
+      
+      .topnav-nav a {
+        color: #ccc;
+        text-decoration: none;
+        padding: 20px 15px;
+        display: block;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      
+      .topnav-nav a:hover {
+        background-color: #2e8b57;
+        color: white;
+      }
+      
+      .topnav-info {
+        color: #999;
+        font-size: 12px;
+        text-align: right;
+        margin-left: auto;
+      }
+      
+      .topnav-info p {
+        margin: 2px 0;
+      }
+      
+      .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      
+      .download-section {
+        background: white;
+        border-radius: 4px;
+        padding: 20px;
+        margin: 20px 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+      
+      .download-section h2 {
+        color: #2e8b57;
+        border-bottom: 2px solid #2e8b57;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+      
+      .download-item {
+        padding: 15px;
+        margin: 10px 0;
+        background-color: #f9f9f9;
+        border-left: 4px solid #2e8b57;
+        border-radius: 2px;
+      }
+      
+      .download-item h3 {
+        color: #333;
+        margin-bottom: 8px;
+      }
+      
+      .download-item p {
+        color: #666;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      
+      .download-btn {
+        display: inline-block;
+        background-color: #2e8b57;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+        font-weight: bold;
+      }
+      
+      .download-btn:hover {
+        background-color: #1f5a3a;
+      }
+      
+      .external-link {
+        color: #2e8b57;
+        text-decoration: none;
+      }
+      
+      .external-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="topnav">
+      <div class="topnav-container">
+        <a href="minecraftborge/index.html" class="topnav-logo">
+          <div class="topnav-logo-icon">MB</div>
+          <span>MinecraftBorge</span>
+        </a>
+        <ul class="topnav-nav">
+          <li><a href="minecraftborge/index.html#installation">Installation</a></li>
+          <li><a href="minecraftborge/index.html#moddev">Mod Development</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+        <div class="topnav-info">
+          <p><strong>MinecraftBorge</strong></p>
+          <p>Legacy Minecraft Modloader</p>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="content">
+      <h1 style="text-align:center; color: #333; margin-bottom: 30px;">Downloads</h1>
+      
+      <!-- Core Files Section -->
+      <div class="download-section">
+        <h2>MinecraftBorge Core</h2>
+        
+        <div class="download-item">
+          <h3>MinecraftBorge for Beta 1.7.3</h3>
+          <p>The main MinecraftBorge modloader package for Minecraft Beta 1.7.3. This is the core file needed to get started with modding.</p>
+          <a href="minecraftborge/files/b1.7.3/releases/minecraftborge.zip" class="download-btn">Download minecraftborge.zip</a>
+        </div>
+      </div>
+      
+      <!-- ASM Libraries Section -->
+      <div class="download-section">
+        <h2>Required ASM Libraries</h2>
+        <p style="color: #666; margin-bottom: 15px;">These ASM (Java bytecode manipulation) libraries are required for MinecraftBorge to function properly. Download all three files.</p>
+        
+        <div class="download-item">
+          <h3>ASM Core Library (v9.9)</h3>
+          <p>Core ASM library required for bytecode operations.</p>
+          <a href="https://repository.ow2.org/nexus/content/repositories/snapshots/org/ow2/asm/asm/9.9-SNAPSHOT/asm-9.9-20250921.084904-10.jar" class="download-btn" target="_blank">Download asm-9.9.jar</a>
+        </div>
+        
+        <div class="download-item">
+          <h3>ASM Tree Library (v9.9)</h3>
+          <p>ASM tree manipulation library for advanced bytecode handling.</p>
+          <a href="https://repository.ow2.org/nexus/content/repositories/snapshots/org/ow2/asm/asm-tree/9.9-SNAPSHOT/asm-tree-9.9-20250921.084904-10.jar" class="download-btn" target="_blank">Download asm-tree-9.9.jar</a>
+        </div>
+        
+        <div class="download-item">
+          <h3>ASM Commons Library (v9.9)</h3>
+          <p>ASM commons library providing utility classes for bytecode manipulation.</p>
+          <a href="https://repository.ow2.org/nexus/content/repositories/snapshots/org/ow2/asm/asm-commons/9.9-SNAPSHOT/asm-commons-9.9-20250921.084904-10.jar" class="download-btn" target="_blank">Download asm-commons-9.9.jar</a>
+        </div>
+      </div>
+      
+      <!-- Mod Development Section -->
+      <div class="download-section">
+        <h2>Mod Development Tools</h2>
+        
+        <div class="download-item">
+          <h3>MinecraftBorge Patch Files</h3>
+          <p>Required patch files for setting up the RetroMCP development environment. Use this with RetroMCP-Java for mod development.</p>
+          <a href="minecraftborge/files/b1.7.3/patches/minecraftborge.patch.zip" class="download-btn">Download minecraftborge.patch.zip</a>
+        </div>
+        
+        <div class="download-item">
+          <h3>RetroMCP-Java</h3>
+          <p>The decompilation and development environment for creating MinecraftBorge mods. Available in both GUI and CLI versions.</p>
+          <a href="https://github.com/MCPHackers/RetroMCP-Java/releases" class="download-btn" target="_blank">Download RetroMCP-Java</a>
+        </div>
+      </div>
+      
+      <!-- Installation Instructions Section -->
+      <div class="download-section">
+        <h2>Installation Instructions</h2>
+        <p>After downloading all files, follow these steps:</p>
+        <ol style="color: #666; line-height: 1.8; margin-left: 20px;">
+          <li>Download minecraftborge.zip and all three ASM JAR files</li>
+          <li>Add the ASM JAR files to your Minecraft jar using your preferred method (WinRAR, 7-Zip, or similar)</li>
+          <li>Your installation is complete! You can now install mods by dragging them into the 'modifications' folder</li>
+          <li>For mod development, download RetroMCP-Java and MinecraftBorge patch files and follow the <a href="minecraftborge/index.html#moddev" class="external-link">Mod Development guide</a></li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

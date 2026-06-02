@@ -2,20 +2,40 @@
 <html>
   <head>
     <title>MinecraftBorge</title>
+    <link rel="stylesheet" href="topnav.css">
   </head>
   <body>
-    <div style="text-align:center">
-      <h1>MinecraftBorge</h1>
-    </div>
-    <div style="font-family:sans-serif;padding:10px;padding-right:50px">
-      <p>
-        is a Minecraft modloader for legacy versions such as beta 1.7.3
-        that allows users to drag-and-drop mod JARs into the modifications folder
-        without needing to worry about mod compatibility.
-      </p>
-      <h2>
-        Installation
-      </h2>
+    <!-- Top Navigation Bar -->
+    <nav class="topnav">
+      <div class="topnav-container">
+        <a href="index.html" class="topnav-logo">
+          <div class="topnav-logo-icon">MB</div>
+          <span>MinecraftBorge</span>
+        </a>
+        <ul class="topnav-nav">
+          <li><a href="#installation">Installation</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+        <div class="topnav-info">
+          <p><strong>MinecraftBorge</strong></p>
+          <p>Forge loader for Beta Minecraft</p>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="content">
+      <div1 style="text-align:center">
+        <h1>MinecraftBorge</h1>
+      </div1>
+      <div style="font-family:sans-serif;padding:10px;padding-right:50px">
+        <p>
+          is a Minecraft modloader for legacy versions such as beta 1.7.3
+          that allows users to drag-and-drop mod JARs into the modifications folder
+          without needing to worry about mod compatibility.
+        </p>
+        <h2 id="installation">
+          Installation
+        </h2>
       <p>
         The process requires either the installer [WIP] or a launcher which allows for easy jar modding.
         This tutorial explains the jar modding method.
@@ -30,7 +50,7 @@
         Installing mods is even simpler: simply download the mods of your choice (make sure they're compatible with your Minecraft version) and drag them into the 'modifications' folder
         located in your .minecraft instance folder.
       </p>
-      <h2>
+      <h2 id="moddev">
         Mod development
       </h2>
       <p>
@@ -86,6 +106,7 @@
         Make sure to NEVER at ANY TIME modify Minecraft or MinecraftBorge classes as they would then be included in your mod JAR and that is something unwanted.
         I hope you code something worth downloading!
       </p>
+    </div>
     </div>
   </body>
 </html>
