@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>MinecraftBorge</title>
   </head>
@@ -7,11 +7,11 @@
     <div style="text-align:center">
       <h1>MinecraftBorge</h1>
     </div>
-    <div style="font-family:sans-serif;padding:10px;padding-right:50px">
+    <div style="font-family:sans-serif;padding: 10px 50px 10px 10px;">
       <p>
-        is a Minecraft modloader for legacy versions such as beta 1.7.3
-        that allows users to drag-and-drop mod JARs into the modifications folder
-        without needing to worry about mod compatibility.
+        is a Minecraft mod loader for legacy versions such as beta 1.7.3
+        that allows users to drag-and-drop mod JARs into the mods folder
+        without needing to worry about class conflicts.
       </p>
       <h2>
         Installation
@@ -19,15 +19,15 @@
       <p>
         The process requires either the installer [WIP] or a launcher which allows for easy jar modding.
         This tutorial explains the jar modding method.
-        First download <a href="files/b1.7.3/releases/minecraftborge.zip">minecraftborge.zip</a>,
-        <a href="https://repository.ow2.org/nexus/content/repositories/snapshots/org/ow2/asm/asm/9.9-SNAPSHOT/asm-9.9-20250921.084904-10.jar">asm-9.9.jar</a>,
-        <a href="https://repository.ow2.org/nexus/content/repositories/snapshots/org/ow2/asm/asm-tree/9.9-SNAPSHOT/asm-tree-9.9-20250921.084904-10.jar">asm-tree-9.9.jar</a> and
-        <a href="https://repository.ow2.org/nexus/content/repositories/snapshots/org/ow2/asm/asm-commons/9.9-SNAPSHOT/asm-commons-9.9-20250921.084904-10.jar">asm-commons-9.9.jar</a>.
+        First download <a href="files/b1.7.3/releases/minecraftborge.zip" target="_blank">minecraftborge.zip</a>,
+        <a href="https://repository.ow2.org/nexus/content/repositories/snapshots/org/ow2/asm/asm/9.9-SNAPSHOT/asm-9.9-20250921.084904-10.jar" target="_blank">asm-9.9.jar</a>,
+        <a href="https://repository.ow2.org/nexus/content/repositories/snapshots/org/ow2/asm/asm-tree/9.9-SNAPSHOT/asm-tree-9.9-20250921.084904-10.jar" target="_blank">asm-tree-9.9.jar</a> and
+        <a href="https://repository.ow2.org/nexus/content/repositories/snapshots/org/ow2/asm/asm-commons/9.9-SNAPSHOT/asm-commons-9.9-20250921.084904-10.jar" target="_blank">asm-commons-9.9.jar</a>.
         Then, add those files to the Minecraft jar using your preferred method.
         After this you should be all set to install mods!
       </p>
       <p>
-        Installing mods is even simpler: simply download the mods of your choice (make sure they're compatible with your Minecraft version) and drag them into the 'modifications' folder
+        Installing mods is even simpler: simply download the mods of your choice (make sure they're compatible with your Minecraft version) and drag them into the 'mods' folder
         located in your .minecraft instance folder.
       </p>
       <h2>
@@ -37,8 +37,8 @@
         So you want to code a mod for MinecraftBorge? Great! The setup may be a little convoluted for now but that will change in the future(TM).
       </p>
       <p>
-        Start by downloading <a href="https://github.com/MCPHackers/RetroMCP-Java/releases">RetroMCP-Java</a> (GUI or CLI, either one works but this tutorial uses the GUI variant).
-        Additionally download the latest <a href="files/b1.7.3/patches/minecraftborge.patch.zip">MinecraftBorge patch files</a>.
+        Start by downloading <a href="https://github.com/MCPHackers/RetroMCP-Java/releases" target="_blank">RetroMCP-Java</a> (GUI or CLI, either one works but this tutorial uses the GUI variant).
+        Additionally, download the latest <a href="files/b1.7.3/patches/minecraftborge.patch.zip" target="_blank">MinecraftBorge patch files</a>.
         Also make sure you run RetroMCP using a Java JDK! A mere JRE will not do (my recommendation is the Azul Zulu distribution).
       </p>
       <p>
@@ -47,26 +47,26 @@
         It's also recommended to set a Java 8 JDK as JAVA_HOME in the RetroMCP options just to be sure, but it is not technically required.
       </p>
       <p>
-        <img src="img/moddev1.png">
+        <img src="img/moddev1.png" alt="Select 'b1.7.3' in the version selector">
       </p>
       <p>
-        <img src="img/moddev2.png">
+        <img src="img/moddev2.png" alt="Press 'yes' on the confirmation screen">
       </p>
       <p>
         <h3>Step 2: decompilation</h3>
         Press the 'decompile' button, and wait for it to finish. If any warnings appear they can usually be safely ignored.
       </p>
       <p>
-        <img src="img/moddev3.png">
+        <img src="img/moddev3.png" alt="Press the 'decompile' button">
       </p>
       <p>
         <h3>Step 3: patching</h3>
         Extract the minecraftborge.patch.zip and copy the contents into the 'patches' folder (located in the same directory as RetroMCP, create the folder if it does not yet exist).
         After this, close and reopen RetroMCP to ensure it actually notices the patch files being present.
-        Then, under MCP > More tasks... seleect 'Apply patch' and wait for it to finish. Any warnings can probably be ignored without issue.
+        Then, under MCP > More tasks... select 'Apply patch' and wait for it to finish. Any warnings can probably be ignored without issue.
       </p>
       <p>
-        <img src="img/moddev4.png">
+        <img src="img/moddev4.png" alt="Select Apply Patch to apply minecraftborge patches">
       </p>
       <p>
         <h3>Step 4: brainwashing</h3>
@@ -75,16 +75,16 @@
         and none of the Minecraft or MinecraftBorge classes are included (that would lead to some sort of catastrophe).
       </p>
       <p>
-        <img src="img/moddev5.png">
+        <img src="img/moddev5.png" alt="Update MD5 to trick RetroMCP into thinking">
       </p>
       <p>
-        <img src="img/moddev6.png">
+        <img src="img/moddev6.png" alt="pretty sure">
       </p>
       <p>
         <h3>Step 5: code away!</h3>
         That was all the setup! Now the minecraft and minecraft_server workspaces can be used to code your mod for the client and server respectively.
         Make sure to NEVER at ANY TIME modify Minecraft or MinecraftBorge classes as they would then be included in your mod JAR and that is something unwanted.
-        I hope you code something worth downloading!
+        Have fun modding!
       </p>
     </div>
   </body>
